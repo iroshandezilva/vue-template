@@ -9,7 +9,7 @@
         </div>
         <div class="flex">
           <div class="w-4/12">
-            <div class="p-4 rounded-md border border-gray-200">
+            <div class="p-4 rounded-md border border-gray-200 dark:border-gray-700">
               <p class="text-sm text-gray-500">
                 Income
               </p>
@@ -18,7 +18,7 @@
                 $5,000.00
               </h6>
 
-              <span class="block h-px w-full my-3 bg-gray-200" />
+              <span class="block h-px w-full my-3 bg-gray-200 dark:bg-gray-700" />
 
               <p class="text-sm text-gray-500">
                 Expenses
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="w-5/12 pl-8">
+      <div class="w-4/12 pl-8">
         <div class="flex items-center mb-4">
           <h3 class="text-base font-semibold dark:text-gray-100">
             Transactions

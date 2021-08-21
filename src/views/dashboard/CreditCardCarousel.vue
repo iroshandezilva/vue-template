@@ -44,7 +44,9 @@ export default {
         itemsToShow: 2,
         itemsToScroll:3,
         snapAlign: 'start',
+        wrapAround:true,
       },
+
       slides:[
         {
           id:1,

@@ -11,11 +11,13 @@
       </main>
     </div>
   </div>
+<!--  <slide-over />-->
 </template>
 
 <script>
 import SideBar from "@/components/SideBar";
 import NavBar from "@/components/NavBar";
+import SlideOver from "@/components/SlideOver";
 
 export default {
   name: "AppLayout",
@@ -23,6 +25,7 @@ export default {
   components: {
     SideBar,
     NavBar,
+    // SlideOver,
   },
 };
 </script>
