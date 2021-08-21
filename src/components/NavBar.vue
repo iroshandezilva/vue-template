@@ -5,7 +5,7 @@
         <!--     Used Sniped URL   https://tailwindcomponents.com/component/wip-hamburger-menu-animation-->
         <nav x-data="{ open: false }">
           <button
-            class="text-green-500 w-10 h-10 relative focus:outline-none "
+            class="text-green-400 w-10 h-10 relative focus:outline-none "
             @click="open = !open"
           >
             <span class="sr-only">Open main menu</span>
@@ -70,7 +70,7 @@
                 <div class="w-3 h-3 relative">
                   <span class="flex h-2 w-2 relative">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
                   </span>
                 </div>
               </div>
@@ -105,7 +105,7 @@
                   Notifications
                 </h5>
                 <a
-                  class="text-sm text-green-500"
+                  class="text-sm text-green-400"
                   href="#"
                 >See all</a>
               </div>

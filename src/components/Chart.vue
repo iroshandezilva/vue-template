@@ -1,17 +1,24 @@
-<template>
-  <canvas
-    id="myChart"
-    width="400"
-    height="400"
-  />
-</template>
-
 <script>
-import Chart from 'chart.js/auto';
-export default {
-name: "Chart",
+import { defineComponent } from 'vue'
+import { Line } from 'vue3-chart-v2'
 
-}
+export default defineComponent({
+  name: 'Chart',
+  extends: Line,
+  props: {
+    chartData: {
+      type: Object,
+      required: true
+    },
+    chartOptions: {
+      type: Object,
+      required: false
+    },
+  },
+  mounted () {
+    this.renderChart(this.chartData, this.chartOptions)
+  }
+})
 </script>
 
 <style scoped>

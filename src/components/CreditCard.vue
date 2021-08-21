@@ -1,6 +1,7 @@
 <template>
   <div
-    class="relative rounded-xl w-72 mr-5 card p-5 overflow-hidden"
+    class="relative rounded-xl w-full mr-5 p-5 overflow-hidden"
+    :class="activeTheme"
   >
     <div class="absolute w-32 h-32 rounded-full bg-green-100 -bottom-5 -right-5 opacity-10" />
 
@@ -11,7 +12,7 @@
       >
     </div>
 
-    <div>
+    <div class="text-left">
       <h6 class="text-base text-white font-bold">
         $6,341.14
       </h6>
@@ -22,7 +23,7 @@
 
 <script>
 
-const THEME = {
+const THEMES = {
   default: [
     'card',
   ],
@@ -34,6 +35,9 @@ const THEME = {
   master: [
     'master',
   ],
+  amex: [
+    'amex',
+  ],
 }
 
 export default {
@@ -43,7 +47,7 @@ export default {
     theme:{
       type: String,
       default:'',
-    }
+    },
   },
 
   computed: {
@@ -67,7 +71,10 @@ background-image: linear-gradient(
     -225deg, #3b35e9 0px, #5f5bd3 48%, #7671ff 100%);
 }
 .master{
-
+  background:linear-gradient(135deg, #C56CD6 0%,#3425AF 100%);
+}
+.amex{
+  background:linear-gradient(135deg, #f2d50f 0%,#da0641 100%);
 }
 
 </style>
