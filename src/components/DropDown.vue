@@ -7,7 +7,7 @@
       v-model="value"
       :options="options"
       :classes="{
-        container: 'relative mx-auto w-full flex items-center justify-end box-border cursor-pointer border-2 border-gray-200 rounded-md bg-white text-sm leading-snug outline-none dark:border-gray-600 ',
+        container: 'relative z-0 mx-auto w-full flex items-center justify-end box-border cursor-pointer border-2 border-gray-200 rounded-md bg-white text-sm leading-snug outline-none dark:border-gray-600 ',
         containerDisabled: 'cursor-default bg-gray-100',
         containerOpen: 'border-green-500',
         containerOpenTop: 'rounded-t-none',
