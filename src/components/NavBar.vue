@@ -1,6 +1,6 @@
 <template>
   <div class="relative z-10 flex-shrink-0 flex h-16 mb-5">
-    <div class="flex-1 px-4 flex justify-between">
+    <div class="flex-1 flex justify-between">
       <div class="flex-1 flex items-center">
         <!--     Used Sniped URL   https://tailwindcomponents.com/component/wip-hamburger-menu-animation-->
         <nav x-data="{ open: false }">

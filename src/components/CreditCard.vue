@@ -5,7 +5,10 @@
     <div class="absolute w-32 h-32 rounded-full bg-green-100 -bottom-5 -right-5 opacity-10" />
 
     <div class="w-10 mb-20 ">
-      <img :src="require('@/assets/img/visa-text-white.svg')" alt="Visa">
+      <img
+        :src="require('@/assets/img/visa-text-white.svg')"
+        alt="visa"
+      >
     </div>
 
     <div>

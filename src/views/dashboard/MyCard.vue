@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-600  p-8 rounded-lg">
+  <card>
     <div class="flex">
       <div class="w-8/12 border-r border-gray-200 dark:border-gray-600 ">
         <h3 class="text-base font-semibold dark:text-gray-100">
@@ -38,7 +38,7 @@
       </div>
       <div class="w-4/12">
         <div class="pl-8">
-          <div class="flex items-center">
+          <div class="flex items-center mb-7">
             <h3 class="text-base font-semibold dark:text-gray-100 flex-1">
               Balance
             </h3>
@@ -47,24 +47,84 @@
               class=" w-40"
               placeholder="Select an option"
               v-model="value"
-              :options="['Batman', 'Robin 123', 'Joker']"
+              :options="['Last 7 days', 'Last Month', 'Last 3 Months']"
             />
+          </div>
+          <h3 class="text-4xl font-bold text-green-500 mb-3">
+            $6,341.11
+          </h3>
+          <span class="text-green-500 text-sm">**** **** **** 4986</span>
+          <div class="flex mt-4">
+            <div class="w-1/2">
+              <h6 class="text-gray-500 text-sm mb-2">
+                Income
+              </h6>
+              <div class="flex items-center">
+                <div class="bg-gray-100 p-2 rounded-full origin-center transform -rotate-45 text-green-500 dark:bg-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </div>
+                <p class="text-sm font-bold ml-3 dark:text-gray-300">
+                  $4,445.00
+                </p>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <h6 class="text-gray-500 text-sm mb-2">
+                Expense
+              </h6>
+              <div class="flex items-center">
+                <div class="bg-gray-100 p-2 rounded-full origin-center transform rotate-45 text-red-500 dark:bg-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </div>
+                <p class="text-sm font-bold ml-3 dark:text-gray-300">
+                  $4,445.00
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </card>
 </template>
 
 <script>
 import CreditCard from "@/components/CreditCard";
 import DropDown from "@/components/DropDown";
+import Card from "@/components/Card";
 
 export default {
   name: "MyCard",
   components: {
     CreditCard,
     DropDown,
+    Card,
   },
 }
 </script>

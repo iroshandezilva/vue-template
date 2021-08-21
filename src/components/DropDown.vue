@@ -7,14 +7,14 @@
       v-model="value"
       :options="options"
       :classes="{
-        container: 'relative mx-auto w-full flex items-center justify-end box-border cursor-pointer border-2 border-gray-200 rounded-md bg-white text-sm leading-snug outline-none ',
+        container: 'relative mx-auto w-full flex items-center justify-end box-border cursor-pointer border-2 border-gray-200 rounded-md bg-white text-sm leading-snug outline-none dark:border-gray-600 ',
         containerDisabled: 'cursor-default bg-gray-100',
         containerOpen: 'border-green-500',
         containerOpenTop: 'rounded-t-none',
         containerActive: 'ring ring-green-500 ring-opacity-30',
         singleLabel: 'flex items-center h-full absolute left-0 top-0 pointer-events-none bg-transparent leading-snug pl-3.5',
         multipleLabel: 'flex items-center h-full absolute left-0 top-0 pointer-events-none bg-transparent leading-snug pl-3.5',
-        search: 'w-full absolute inset-0 outline-none appearance-none box-border border-0 text-sm font-sans bg-white rounded pl-3.5',
+        search: 'w-full absolute inset-0 outline-none appearance-none box-border border-0 text-sm font-sans bg-white rounded pl-3.5 dark:bg-gray-700 ',
         tags: 'flex-grow flex-shrink flex flex-wrap items-center mt-1 pl-2',
         tag: 'bg-green-500 text-white text-sm font-semibold py-0.5 pl-2 rounded mr-1 mb-1 flex items-center whitespace-nowrap',
         tagDisabled: 'pr-2 !bg-gray-400 text-white',
@@ -24,7 +24,7 @@
         tagsSearch: 'absolute inset-0 border-0 outline-none appearance-none p-0 text-sm font-sans box-border w-full',
         tagsSearchCopy: 'invisible whitespace-pre-wrap inline-block h-px',
         placeholder: 'flex items-center h-full absolute left-0 top-0 pointer-events-none bg-transparent leading-snug pl-3.5 text-gray-400',
-        caret: 'bg-multiselect-caret bg-center bg-no-repeat w-3 h-3 py-px box-content mr-3.5 relative z-10 opacity-40 flex-shrink-0 flex-grow-0 transition-transform transform pointer-events-none',
+        caret: 'bg-multiselect-caret bg-center bg-no-repeat w-3 h-3 py-px box-content mr-3.5 relative z-10 opacity-40 flex-shrink-0 flex-grow-0 transition-transform transform pointer-events-none ',
         caretOpen: 'rotate-180 pointer-events-auto',
         clear: 'pr-3.5 relative z-10 opacity-40 transition duration-300 flex-shrink-0 flex-grow-0 flex hover:opacity-80',
         clearIcon: 'bg-multiselect-remove bg-center bg-no-repeat w-2.5 h-4 py-px box-content inline-block',
