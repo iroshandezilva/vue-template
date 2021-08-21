@@ -4,7 +4,7 @@ import SamplePage from "@/views/SamplePage";
 
 const routes = [
   {
-    path: "/dashboard",
+    path: "/",
     name: "dashboard",
     component: Dashboard,
   },

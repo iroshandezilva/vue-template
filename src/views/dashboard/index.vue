@@ -1,9 +1,15 @@
 <template>
-  <div class="bg-red-500 dark:bg-black"></div>
+  <my-card />
 </template>
 
 <script>
+import MyCard from "@/views/dashboard/MyCard";
+
 export default {
-  name: "dashboard",
+  name: "Dashboard",
+
+  components:{
+    MyCard,
+  }
 };
 </script>
