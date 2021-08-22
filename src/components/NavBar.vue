@@ -59,11 +59,11 @@
             />
           </svg>
         </button>
-        <Popover
+        <popover
           v-slot="{ open }"
           class="relative z-0"
         >
-          <PopoverButton
+          <popover-button
             :class="open ? '' : 'text-opacity-90'"
             class="text-gray-400 bg-transparent p-2 rounded-full hover:bg-gray-200 hover:text-gray-500  mr-2 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-300 relative"
           >
@@ -89,7 +89,7 @@
                 d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
               />
             </svg>
-          </PopoverButton>
+          </popover-button>
 
           <transition
             enter-active-class="transition duration-200 ease-out"
@@ -99,7 +99,7 @@
             leave-from-class="translate-y-0 opacity-100"
             leave-to-class="translate-y-1 opacity-0"
           >
-            <PopoverPanel
+            <popover-panel
               class="absolute bg-white w-72 px-4 mt-3 transform -translate-x-full left-full  rounded-md shadow-lg"
             >
               <div class="flex justify-between p-3 border-b border-gray-100">
@@ -167,9 +167,9 @@
                   </div>
                 </div>
               </div>
-            </PopoverPanel>
+            </popover-panel>
           </transition>
-        </Popover>
+        </popover>
 
         <button class="text-gray-400 bg-transparent p-2 rounded-full hover:bg-gray-200 hover:text-gray-500  mr-2 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-300 ">
           <svg

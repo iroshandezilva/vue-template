@@ -29,7 +29,7 @@ import 'vue3-carousel/dist/carousel.css';
 
 
 export default {
-  name: 'App',
+  name: 'CreditCardCarousel',
 
   components: {
     Carousel,
