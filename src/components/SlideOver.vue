@@ -5,11 +5,21 @@
   >
     <Dialog
       as="div"
-      class="fixed inset-0 overflow-hidden"
-      @close="open = false"
+      class="fixed z-10 inset-0 overflow-hidden"
+      @close="close"
     >
       <div class="absolute inset-0 overflow-hidden">
-        <DialogOverlay class="absolute inset-0" />
+        <TransitionChild
+          as="template"
+          enter="ease-in-out duration-500"
+          enter-from="opacity-0"
+          enter-to="opacity-100"
+          leave="ease-in-out duration-500"
+          leave-from="opacity-100"
+          leave-to="opacity-0"
+        >
+          <DialogOverlay class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+        </TransitionChild>
 
         <div class="fixed inset-y-0 right-0 pl-10 max-w-full flex">
           <TransitionChild
@@ -67,7 +77,7 @@ import { ref } from 'vue'
 import { Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
 
 export default {
-name: "SlideOver",
+  name: "SlideOver",
   components: {
     Dialog,
     DialogOverlay,
@@ -76,6 +86,8 @@ name: "SlideOver",
     TransitionRoot,
   },
 
+  emits: ['close'],
+
   props: {
     show: {
       type: Boolean,
@@ -83,16 +95,17 @@ name: "SlideOver",
     },
   },
 
-    setup() {
-    const open = ref(true)
+  setup(props, { emit }) {
+    const open = computed(() => props.show)
+
+    close = () => {
+      emit('close')
+    }
 
     return {
       open,
+      close,
     }
   },
 }
 </script>
-
-<style scoped>
-
-</style>

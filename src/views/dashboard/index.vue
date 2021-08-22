@@ -1,6 +1,5 @@
 <template>
   <my-card />
-
   <monthly-summary />
 </template>
 
